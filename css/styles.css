@@ -1,0 +1,183 @@
+:root{
+    --blanco: #fff;
+    --gris_light: rgba(233, 231, 227,.4); 
+    --negro_light: rgb(37, 35, 35);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing:border-box;
+}
+
+*, *:before, *:after{
+	box-sizing:inherit;
+} 
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h3{
+    color: var(--blanco);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.section{
+    padding: 7rem 5rem;
+    height: auto;
+    text-align: center;
+}
+
+.section h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.section p{
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+.website-parallax{
+    background-image: url(../img/img2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    height: 100vh;
+    position: relative;
+}
+
+.website-parallax::after{
+    content: '';
+    background-color: var(--gris_light);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.website-parallax h1{
+    background-color: var(--negro_light);
+    display: inline-block;    
+    padding: 2rem 2rem;
+    font-size: 3rem;
+}
+
+.section-one{
+    background-color: rgb(243, 234, 234);
+}
+
+.image-two-parallax{
+    background-image: url(../img/img3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    position: relative;
+    text-align: center;
+}
+
+.image-two-parallax::after{
+    content: '';
+    background-color: var(--gris_light);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.image-two-parallax h3{
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.section-two{
+    background-color: rgb(51, 46, 46);
+    color: #fff;
+    height: 50vh;
+}
+
+.image-three-parallax{
+    background-image: url(../img/img1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    position: relative;
+}
+
+.image-three-parallax::after{
+    content: '';
+    background-color: var(--gris_light);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.image-three-parallax h3{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.section-three{
+    background-color: rgb(51, 46, 46);
+    color: #fff;
+    height: 50vh;
+}
+
+.traversy-media-parallax{
+    background-image: url(../img/img4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+}
+
+.traversy-media-parallax::after{
+    content: '';
+    background-color: var(--gris_light);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.traversy-media-parallax h2{
+    background-color: rgb(37, 35, 35);
+    color: #fff;
+    display: inline-block;  
+    letter-spacing: 1rem;
+    text-transform: uppercase;  
+    padding: 2rem 2rem;
+    font-size: 3rem;
+}
