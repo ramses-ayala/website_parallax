@@ -60,6 +60,15 @@ body{
     position: relative;
 }
 
+
+@media (max-width: 768px){
+    .website-parallax{
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
 .website-parallax::after{
     content: '';
     background-color: var(--gris_light);
@@ -78,12 +87,20 @@ body{
     text-align: center;
 }
 
+@media (max-width:768px){
+    .center{
+        width: 95%;
+    }   
+}
+
 .website-parallax h1{
     background-color: var(--negro_light);
     display: inline-block;    
     padding: 2rem 2rem;
     font-size: 3rem;
 }
+
+
 
 .section-one{
     background-color: rgb(243, 234, 234);
@@ -98,6 +115,12 @@ body{
     height: 60vh;
     position: relative;
     text-align: center;
+}
+
+@media (max-width:768px){
+    .image-two-parallax{
+        background-attachment: scroll;
+    }
 }
 
 .image-two-parallax::after{
@@ -118,7 +141,7 @@ body{
 .section-two{
     background-color: rgb(51, 46, 46);
     color: #fff;
-    height: 50vh;
+    /*height: auto;*/
 }
 
 .image-three-parallax{
@@ -129,6 +152,12 @@ body{
     background-position: center center;
     height: 60vh;
     position: relative;
+}
+
+@media (max-width:768px){
+    .image-three-parallax{
+        background-attachment: scroll;
+    }
 }
 
 .image-three-parallax::after{
@@ -149,7 +178,7 @@ body{
 .section-three{
     background-color: rgb(51, 46, 46);
     color: #fff;
-    height: 50vh;
+    /* height: auto; */
 }
 
 .traversy-media-parallax{
@@ -160,6 +189,12 @@ body{
     background-position: center center;
     height: 100vh;
     position: relative;
+}
+
+@media (max-width:768px){
+    .traversy-media-parallax{
+        background-attachment: scroll;
+    }
 }
 
 .traversy-media-parallax::after{
